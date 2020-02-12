@@ -42,7 +42,7 @@ namespace WitQuickStarts
                 ////instantiate objects
                 //Samples.CreateBug objBug = new Samples.CreateBug(connectionUrl, token, repoId);
                 //Samples.ExecuteQuery objQuery = new Samples.ExecuteQuery(connectionUrl, token, repoId);
-                var objPrsByWorkItem = new GetPullRequestsWithWorkItemInfo(connectionUrl, token, repoId);
+                var objPrsByWorkItem = new GetPullRequestsWithWorkItemInfo(connectionUrl, token);
                 objPrsByWorkItem.GetPRsWithWorkItemInfo().Wait();
 
 
